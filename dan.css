@@ -1,3 +1,4 @@
+  
   body{
     padding: 0;
     margin: 0;
@@ -5,15 +6,13 @@
     clear:both;
     position:relative;
     background:url('background.png');
-
   }
-.art svg {
-  height:430px;
-  position:absolute;
-  left:-260px;
-  top:-165px;
-}
-
+  .art svg {
+    height:430px;
+    position:absolute;
+    left:-260px;
+    top:-165px;
+  }
 
   .art #logo{
     position:absolute;
@@ -27,7 +26,6 @@
     -o-transition: 2s;
     transition: 2s;
   }
-  #paintingcircles{    margin:auto;}
 
 nav{
     font-family: helvetica;
@@ -119,7 +117,6 @@ nav{
   .hexagon {
     background-color: rgba(255,255,255,1);
     box-shadow: 0 0 15px rgba(0,0,0,0.85);
-
   }
 
   .hexagon:before,
@@ -149,7 +146,7 @@ nav{
     bottom: -84.9px;
   }
 
-  /*cover up extra shadows*/
+  /* cover up extra shadows*/
   .hexagon span {
     display: block;
     position: absolute;
@@ -160,7 +157,20 @@ nav{
     z-index: 2;
     background: inherit;
 
+}
+  /* Site Map */
+
+  .sitemapcontainer{
+
+
   }
+
+  .sitemapcontainer ul{
+
+    
+  }
+
+  /* Homies */
 
 
 @media(max-width:480px){
@@ -194,7 +204,7 @@ nav{
   }
 
   nav a:hover{
-    color:rgba(120,120,120,1);
+    color:rgba(230,230,230,1);
   }
 
 }
@@ -255,9 +265,10 @@ nav{
     transition: .5s;
   }
 
-  nav:hover{
+ nav:hover{
     height:60px;
-  } 
+  }
+
 
   article{
     width:880px;

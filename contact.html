@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Clothing by Daniel Velasquez</title>
 	<link rel="stylesheet" href="paint.css">
-	<!-- script included in header for html verification, normally would be included at bottom -->
+	<link rel="stylesheet" href="normalize.css">
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-	<script src="js/clothing.js"></script>
+	<title>Nebuchadnezzar's Pottery</title>
 </head>
 <body>
 
@@ -36,42 +34,32 @@
 
 	</nav>
 
-	<main>
+	<form action="post">
 
-		<div id="sidebar">
-			<nav id="sidenav">
-				<ul>
-					<li>
-						<a href="paint.html">Unisex</a>
-						<ul>
-<!-- 							<li><a href="">-Shirts</a></li> -->
-							<li><a href="">-Hoodies</a></li>
-<!-- 							<li><a href="">-Beanies</a></li>
-							<li><a href="">-Accessories</a></li> -->
-						</ul>
+		<h1>Contact Daniel</h1>
+		<input type="text" placeholder="Email" required>
 
-					</li>
-					<li><h2>More Coming Soon!</h2></li>
+		<h2>Were you satisfied with your Web Experience?</h2>
+		<input type="radio">Yes
+		<input type="radio">No
+		<input type="radio">Kiiindaa.....
 
-				<!-- Coming Soon : <li><a href="">Womens</li> <li>Mens</li> -->
+		<h2>What kind of animals if any do you like?</h2>
+		<input type="checkbox">Puppies
+		<input type="checkbox">Kittens
+		<br>
 
-				</ul>
-			</nav>
-		</div>
+		<h2>What was your purpose here?</h2>
+		<select>
+			<option value="Buying">Buying</option>
+			<option value="Browsing">Browsing</option>
+			<option value="Voyeuring">Voyeuring</option>
+		</select>
 
-		<div id="clothingviewer">
+			<h2>If you have any comments please feel free to leave them here!</h2>
+		<textarea name="comments" id="" cols="30" rows="10" placeholder="Give me some Comments!"></textarea>
+		<button type="submit" method="POST">Submit!</button>
 
-<!-- 			
-
-for when we start selling
-<a href="imgs/img.png">
-				<img class="clothing shirt" src="imgs/img11.png" alt="Speed Wobbles T-shirt">
-			</a> -->
-
-
-		</div>
-
-
-	</main>
+	</form>
 </body>
 </html>
