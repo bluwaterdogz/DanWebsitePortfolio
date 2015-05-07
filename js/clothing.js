@@ -1,49 +1,24 @@
 $(document).ready(function(){
 	
 	var clothingPosition = 0;
-	var position;
 
 	setInterval(function(){
-
-		if(clothingPosition > -6144){
-			clothingPosition -=512;
-
+		if(clothingPosition > -24000){
+			clothingPosition -=600;
 		}else{
-	 		clothingPosition = 0;
+			clothingPosition=0;
 		}
+			$("#clothingviewer").css("backgroundPosition",clothingPosition+"px");
 
-		$("#clothingviewer").css("backgroundPosition",clothingPosition+"px");
-
-	},100);
-
-
-//use to get the sprite image
+	},120);
 		
 
-		$("img").on("mouseover click", function(){
-			var $this = $(this),
-				srcImg = $this.attr("src"),
-				viewerImg = "url("+srcImg+")";
+	$(".animationchooser").on("mouseover click", function(){
+		var $this = $(this),
+			srcImg = $this.data("animation"),
+			viewerImg = "url(imgslo/"+srcImg+")";
+		$("#clothingviewer").css("background", viewerImg); 
 
-			var imageObj = new Image();
-				imageObj.src = srcImg;
-
-			var width = imageObj.width,
-				height = imageObj.height,
-				galWidth = imageObj.width + 30,
-				galHeight = imageObj.height + 30;
-
-			$(".clothingviewer").css("background", viewerImg); 
-			$(".imgviewer").animate({
-				width:width,
-				height:height
-			},200);
-
-			$(".viewer").animate({
-				width:galWidth,
-				height:galHeight
-			},200);
-
-		});
+	});
 
 });

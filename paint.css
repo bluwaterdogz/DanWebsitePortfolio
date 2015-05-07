@@ -90,10 +90,11 @@
 /*Clothing Viewer*/
 
   #clothingviewer{
-    width:512px;
-    background:url("imgslo/piggy-spritesheet.png");
-    height:540px;
+    width:550px;
+    background:url("imgslo/chance.jpg");
+    height:700px;
     float: right;
+    background-position: -50px;
     margin:auto;
   }
 
