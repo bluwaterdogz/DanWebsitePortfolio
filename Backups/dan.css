@@ -60,7 +60,7 @@ nav{
   }
 
   #menuIn:target{
-    left:100px;
+    height::60px;
 
   }
   #menuIn img{
@@ -157,20 +157,7 @@ nav{
     z-index: 2;
     background: inherit;
 
-}
-  /* Site Map */
-
-  .sitemapcontainer{
-
-
   }
-
-  .sitemapcontainer ul{
-
-    
-  }
-
-  /* Homies */
 
 
 @media(max-width:480px){
@@ -190,10 +177,8 @@ nav{
     margin:top:700px;
   }
 
-  }
+}
 @media(min-width:480px){
-
-
 
   .art:first-child {
     margin-left: 0;
@@ -268,7 +253,6 @@ nav{
  nav:hover{
     height:60px;
   }
-
 
   article{
     width:880px;

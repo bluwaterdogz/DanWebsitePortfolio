@@ -10,13 +10,13 @@ $(document).ready(function(){
 		$(".art").css({
 			"left":  (
 				//TODO, position art box better so that th -25 isn't necessary, get current position -
-				(offset.left -mouseX)*((108*count-$(".imgchooser").width())/$(".imgchooser").width() )-.05*$(".imgchooser").width() )
+				(offset.left -mouseX)*((110*count-$(".imgchooser").width())/$(".imgchooser").width() )-.05*$(".imgchooser").width() )
 		});
 	});
 
 	if($(window).width()> 480){
 
-		$("img").on("mouseover click", function(){
+		$(".thumbnail").on("mouseover click", function(){
 			var $this = $(this),
 				srcImg = $this.attr("src"),
 				viewerImg = "url("+srcImg+")";

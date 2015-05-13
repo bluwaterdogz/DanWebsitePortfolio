@@ -5,11 +5,10 @@
 	<link rel="stylesheet" href="paint.css">
 	<link rel="stylesheet" href="normalize.css">
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<title>Contact me</title>
+	<title>Nebuchadnezzar's Pottery</title>
 </head>
 <body>
 
-	<a href="#topnav" id="menuin"><img src="imgslo/icons/menuin2.png" alt="Click For Menu"></a>
 	<nav id="topnav">
 
 		<div class="navList">		
@@ -35,43 +34,32 @@
 
 	</nav>
 
-	<form method="post" action="http://earthdance.com/cgi-bin/bnbform/bnbform.cgi">
+	<form action="post">
 
 		<h1>Contact Daniel</h1>
-		<input type="text" name="email" placeholder="Email" required>
+		<input type="text" placeholder="Email" required>
 
 		<h2>Were you satisfied with your Web Experience?</h2>
-		<input type="radio" name="satisfaction" >Yes
-		<input type="radio" name="satisfaction">No
-		<input type="radio" name="satisfaction">Kiiindaa.....
+		<input type="radio">Yes
+		<input type="radio">No
+		<input type="radio">Kiiindaa.....
 
 		<h2>What kind of animals if any do you like?</h2>
-		<input type="checkbox" name="animal">Puppies
-		<input type="checkbox" name="animal">Kittens
+		<input type="checkbox">Puppies
+		<input type="checkbox">Kittens
 		<br>
 
 		<h2>What was your purpose here?</h2>
-		<select name="purpose">
+		<select>
 			<option value="Buying">Buying</option>
 			<option value="Browsing">Browsing</option>
 			<option value="Voyeuring">Voyeuring</option>
 		</select>
 
 			<h2>If you have any comments please feel free to leave them here!</h2>
-		<textarea name="comments" cols="30" rows="10" placeholder="Give me some Comments!"></textarea>
-		<button type="submit">Submit!</button>
-		<!-- SCRIPT CONFIGURATION SECTION -->
-		<input type="hidden" name="data_order" value="email, satisfaction, purpose, animal">
-		<input type="hidden" name="submit_to" value="bveedy@gmail.com">
-		<input type="hidden" name="form_id" value="My Test Form">
-		<input type="hidden" name="ok_url" value="http://webhawks.org/~dm60brvela4329/DanWEbsitePortfolio/contact.html">
+		<textarea name="comments" id="" cols="30" rows="10" placeholder="Give me some Comments!"></textarea>
+		<button type="submit" method="POST">Submit!</button>
 
 	</form>
-
-			<div>
-		<a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>
-		&nbsp;&nbsp;
-		<a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
-		</div>
 </body>
 </html>

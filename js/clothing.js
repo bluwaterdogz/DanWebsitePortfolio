@@ -16,9 +16,30 @@ $(document).ready(function(){
 	$(".animationchooser").on("mouseover click", function(){
 		var $this = $(this),
 			srcImg = $this.data("animation"),
-			viewerImg = "url(imgslo/"+srcImg+")";
+			viewerImg = "url(imgslo/clothing/"+srcImg+")";
 		$("#clothingviewer").css("background", viewerImg); 
 
 	});
+		$("img").on("mouseover click", function(){
+			var $this = $(this),
+				srcImg = $this.attr("src"),
+				viewerImg = "url("+srcImg+")";
+
+			var imageObj = new Image();
+				imageObj.src = srcImg;
+
+
+			$(".clothinglogoviewer").css("background", viewerImg); 
+
+			$(".clothinglogoviewer").animate({
+				width:200,
+				height:200,
+				backgroundSize:'100%'
+
+			},200);
+
+
+		});
+
 
 });
