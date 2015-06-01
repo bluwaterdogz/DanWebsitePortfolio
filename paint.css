@@ -159,6 +159,7 @@
     left:5px;  
     z-index: -10;
   }
+
   .socialIcons{
     float: right;
     width:40px;
@@ -184,30 +185,42 @@
 
 /* Image Selector*/
 
-  .imgchooser, form{
-    width:83%;
-    height: 120px; 
+  .imgchooser{
+    position:absolute;
+    left:7%;
+    top:70px;
+    width:150px;
+    height: 80vh; 
     text-align: center;
     margin: auto;
     overflow: hidden;
     white-space: nowrap;
+    float: left;
   }
+
+  .paint .art{
+    width:100px;
+    height:100px;
+    display:block;
+    position: relative;
+    margin-top: 5px;
+  }
+
   form{
+    width:83%;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
     margin:50px auto;  
     height:700px;
   }
 
 /* Circle Painting Selector */
 
-  .paint .art{
-    width:100px;
-    height:100px;
-    display:inline-block;
-    position: relative;
-    margin-left: 3px;
-  }
+
   .paint .art:first-child{
-    margin-left: 3%;
+    margin-top: 3%;
   }
   .paint img{
     border-radius: 300px;
@@ -225,8 +238,8 @@
   .paint .hexagon:hover{
     z-index:100;
     opacity: 1;
-    /*-webkit-filter: (0%);*/
-    /*filter: grayscale(0%);*/
+    -webkit-filter: (0%);
+    filter: grayscale(0%);
   }
   .paint .hexagon {
     position: relative;
@@ -234,8 +247,8 @@
     height: 57.7375px;
     margin: 40px 0;
     opacity: 0.5;
-    /*filter: grayscale(50%);*/
-    /*-webkit-filter: grayscale(50%);*/
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
     -webkit-transition:.5s;
     -moz-transition:.5s;
     -o-transition:.5s;
@@ -248,8 +261,9 @@
     float: right;
   }
   .paint .viewer {
-    width:90%;
-    height:100px;
+
+    width:100px;
+    height:90vh;
     margin: auto;
     vertical-align:  middle;
     padding:20px;
@@ -259,6 +273,7 @@
     height:90%;
     margin: auto;
     background: url("imgs/img01.png");
+    float: right;
   }
 
 /*Thanks Page*/
@@ -350,7 +365,7 @@
 /*Side Nav*/
 
   .sidenav{
-    width:300px;
+    width:100%;
     margin:auto;
   }
   .sidenav li{
@@ -370,7 +385,7 @@
   }
   .clothinglogoviewer{
     width:90%;
-    margin:20px;
+  margin:auto;
   
   }
   figure{
@@ -389,6 +404,7 @@
   #logoviewer{
     width:90%;
     margin: auto;
+    text-align: center;
   }
   #logoviewer img{
     width:50px;
@@ -535,6 +551,7 @@
     -o-transition: .5s;
     transition: .5s;
   }
+
   #topnav:hover{
     height:60px;
   }

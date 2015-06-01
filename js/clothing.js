@@ -20,26 +20,27 @@ $(document).ready(function(){
 		$("#clothingviewer").css("background", viewerImg); 
 
 	});
-		$("img").on("mouseover click", function(){
-			var $this = $(this),
-				srcImg = $this.attr("src"),
-				viewerImg = "url("+srcImg+")";
 
-			var imageObj = new Image();
-				imageObj.src = srcImg;
+	$("#logoviewer").on("mouseover click","img", function(){
+		var $this = $(this),
+			srcImg = $this.attr("src"),
+			viewerImg = "url("+srcImg+")";
 
-
-			$(".clothinglogoviewer").css("background", viewerImg); 
-
-			$(".clothinglogoviewer").animate({
-				width:200,
-				height:200,
-				backgroundSize:'100%'
-
-			},200);
+		var imageObj = new Image();
+			imageObj.src = srcImg;
 
 
-		});
+		$(".clothinglogoviewer").css("background", viewerImg); 
+
+		$(".clothinglogoviewer").animate({
+			width:200,
+			height:200,
+			backgroundSize:'100%'
+
+		},200);
+
+
+	});
 
 
 });

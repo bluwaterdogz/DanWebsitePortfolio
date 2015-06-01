@@ -7,10 +7,17 @@ $(document).ready(function(){
 			count = $(".imgchooser .art").length;
 			offset = $(".imgchooser").offset();
 
+	// Horizontal
+		// $(".art").css({
+		// 	"left":  (
+		// 		(offset.left -mouseX)*((110*count-$(".imgchooser").width())/$(".imgchooser").width() )-.05*$(".imgchooser").width() )
+		// });
+
+	// Vertical
 		$(".art").css({
-			"left":  (
-				//TODO, position art box better so that th -25 isn't necessary, get current position -
-				(offset.left -mouseX)*((110*count-$(".imgchooser").width())/$(".imgchooser").width() )-.05*$(".imgchooser").width() )
+			"top":  (
+				(offset.top - mouseY)*((110*count-$(".imgchooser").height())/$(".imgchooser").height() ) // + .05*$(".imgchooser").height()
+			)
 		});
 	});
 
@@ -31,13 +38,13 @@ $(document).ready(function(){
 
 			$(".imgviewer").css("background", viewerImg); 
 			$(".imgviewer").animate({
-				width:width,
-				height:height
+				width : width,
+				height : height
 			},200);
 
 			$(".viewer").animate({
-				width:galWidth,
-				height:galHeight
+				width : galWidth,
+				height : galHeight
 			},200);
 
 		});
