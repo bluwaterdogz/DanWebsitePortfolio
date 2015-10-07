@@ -1,0 +1,148 @@
+body{
+	background-image: url("../imgs/bbopt.jpg");
+	background-size: 100% 100vh;
+	width:100%;
+	height:100vh;
+	overflow: hidden;
+	margin: 0px;
+}
+.main{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.svg1{
+	width:85%;
+	height:85vw;
+	position:absolute;
+	top:500px;
+	left:-300px;
+}
+.svg2 .g3 path{
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+.svg2 .g3 path:hover{
+	fill:#FFD700;
+	stroke:1px white;
+}
+.svg2{
+	position:absolute;
+	top:35vh;
+	left:-10%;
+}
+.svg3{
+	position:absolute;
+	top:40px;
+	right:40px;
+}
+.scaleOut{
+	transform:scale(0);
+}
+.footermenu{
+	position:absolute;
+	bottom:30px;
+	left:15%;
+}
+.footermenu li{
+	list-style: none;
+	display: inline;
+}
+.footermenu a{
+	font-family: helvetica;
+	font-size: 50px;
+	text-decoration: none;
+	color:#41130C;
+	font-weight: bold;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+.footermenu a:hover{
+
+	color: 	rgba(250,100,0,1);
+
+}
+.svg3 path{
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+.svg3:hover path{
+	fill:rgba(250,100,0,1);
+}
+
+
+
+.cornerMandala{
+	position:absolute;
+	width:150px;
+	height:150px;
+	bottom:50px;
+	left:50px;
+	z-index:100;
+}
+.png1{
+	height:80px;
+	width:80px; 
+	bottom:85px;
+	left:85px;
+}
+
+@media (max-width: 1200px) {
+	.footermenu a{
+		font-size: 40px;
+	}
+	.svg2{
+		position:absolute;
+		left:-20%;
+	}
+
+}
+@media (max-width: 900px) {
+	.svg1{
+		top:0px;
+		left:9%;
+	}
+	.svg2{
+		position:absolute;
+		top:70%;
+		left:10%;
+	}
+
+}
+@media (max-width: 700px) {
+	.footermenu li{
+		display:block;
+	}
+	.svgs{
+		height:60%;
+		width:100%;
+		background-image: url('../imgs/bb.jpg');
+		background-size: 100% 100%;
+	}
+	.footermenu a{
+	   -webkit-text-stroke-width: 1px;
+	   -webkit-text-stroke-color: black;
+	}
+	.footermenu{
+		height:40%;
+		position:absolute;
+		bottom:0px;
+		left:auto;
+		margin:auto;
+		background-color: black;
+		width:100%;
+	}
+	ul{
+		text-align: center;
+		padding:0px;
+		margin: 0px;
+
+	}
+	body{
+		background-position: 
+	}
+
+}

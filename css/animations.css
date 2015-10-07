@@ -1,0 +1,145 @@
+.png1 {
+	-webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+
+    -webkit-animation: rotation 25s infinite linear;
+    -moz-animation: rotation 25s infinite linear;
+    -o-animation: rotation 25s infinite linear;
+    animation: rotation 25s infinite linear;
+}
+.png2 {
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: rotationL 5s infinite linear;
+    -moz-animation: rotationL 5s infinite linear;
+    -o-animation: rotationL 5s infinite linear;
+    animation: rotationL 5s infinite linear;
+}
+.png3 {
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: rotation 5s infinite linear;
+    -moz-animation: rotation 5s infinite linear;
+    -o-animation: rotation 5s infinite linear;
+    animation: rotation 5s infinite linear;
+}
+
+.svg1 path, .svg1 polygon{
+ 
+    -webkit-animation: strokechange 5s infinite ease-in-out;
+    -moz-animation: strokechange 5s infinite ease-in-out;
+    -o-animation: strokechange 5s infinite ease-in-out;
+    animation: strokechange 5s infinite ease-in-out;
+}
+
+.letteranimate{
+
+    -webkit-animation: letterAnimation 2s linear;
+    -moz-animation: letterAnimation 2s linear;
+    -o-animation: letterAnimation 2s linear;
+    animation: letterAnimation 2s linear;
+
+}
+
+
+@-webkit-keyframes strokechange {
+    0% {stroke:rgba(250,100,0,.3);}
+    50%   {stroke:rgba(250,100,0,1);stroke-width:2px;}
+    100% {stroke:rgba(250,100,0,.3);}
+}
+@-moz-keyframes strokechange {
+    0% {stroke:rgba(250,100,0,.3);}
+    50%   {stroke:rgba(250,100,0,1);stroke-width:2px;}
+    100% {stroke:rgba(250,100,0,.3);}
+}
+@-o-keyframes strokechange {
+    0% {stroke:rgba(250,100,0,.3);}
+    50%   {stroke:rgba(250,100,0,1);stroke-width:2px;}
+    100% {stroke:rgba(250,100,0,.3);}
+}
+@keyframes strokechange {
+    0% {stroke:rgba(250,100,0,.3);}
+    50%   {stroke:rgba(250,100,0,1);stroke-width:2px;}
+    100% {stroke:rgba(250,100,0,.3);}
+}
+
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to   {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+    from {-o-transform: rotate(0deg);}
+    to   {-o-transform: rotate(359deg);}
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(359deg);}
+}
+
+@-webkit-keyframes rotationL {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(-359deg);}
+}
+@-moz-keyframes rotationL {
+    from {-moz-transform: rotate(0deg);}
+    to   {-moz-transform: rotate(-359deg);}
+}
+@-o-keyframes rotationL {
+    from {-o-transform: rotate(0deg);}
+    to   {-o-transform: rotate(-359deg);}
+}
+@keyframes rotationL {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(-359deg);}
+}
+
+@-webkit-keyframes letterAnimation {
+    0% {-webkit-transform: scale(0);fill:black;}
+    60%   {-webkit-transform: scale(1.1);}
+    70%   {-webkit-transform: scale(.95);}
+    85%   {-webkit-transform: scale(1.05);}
+    90%   {-webkit-transform: scale(.98);}
+    95%   {-webkit-transform: scale(1.01);}
+    100%   {-webkit-transform: scale(1);fill:black;}
+}
+@-moz-keyframes letterAnimation {
+    0% {-webkit-transform: scale(0);fill:black;}
+    60%   {-webkit-transform: scale(1.1);}
+    70%   {-webkit-transform: scale(.95);}
+    85%   {-webkit-transform: scale(1.05);}
+    90%   {-webkit-transform: scale(.98);}
+    95%   {-webkit-transform: scale(1.01);}
+    100%   {-webkit-transform: scale(1);fill:black;}
+}
+@-o-keyframes letterAnimation {
+    0% {-o-transform: scale(0);fill:black;}
+    60%   {-o-transform: scale(1.1);}
+    70%   {-o-transform: scale(.95);}
+    85%   {-o-transform: scale(1.05);}
+    90%   {-o-transform: scale(.98);}
+    95%   {-o-transform: scale(1.01);}
+    100%   {-o-transform: scale(1);fill:black;}
+}
+@keyframes letterAnimation {
+    0% {transform: scale(0);fill:black;}
+    60%   {transform: scale(1.1);}
+    70%   {transform: scale(.95);}
+    85%   {transform: scale(1.05);}
+    90%   {transform: scale(.98);}
+    95%   {transform: scale(1.01);}
+    100%   {transform: scale(1);fill:black;}
+}
