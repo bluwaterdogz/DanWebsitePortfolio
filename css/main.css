@@ -28,14 +28,15 @@ body{
 	stroke:1px white;
 }
 .svg2{
-	position:absolute;
+	position:fixed;
 	top:35vh;
 	left:-10%;
 }
 .svg3{
+	display:none;
 	position:absolute;
-	top:40px;
-	right:40px;
+	top:0;
+	right:10px;
 }
 .scaleOut{
 	transform:scale(0);
